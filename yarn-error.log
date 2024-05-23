@@ -1,0 +1,65 @@
+Arguments: 
+  /home/talbi/.nvm/versions/node/v20.6.1/bin/node /home/talbi/.nvm/versions/node/v20.6.1/bin/yarn
+
+PATH: 
+  /home/talbi/.vscode-server/bin/e170252f762678dec6ca2cc69aba1570769a5d39/bin/remote-cli:/home/talbi/.nvm/versions/node/v20.6.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/VMware/VMware Player/bin/:/mnt/c/Program Files/Oculus/Support/oculus-runtime:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/laragon/bin/php/php-7.4.19-Win32-vc15-x64:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/amir_/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/amir_/AppData/Local/Programs/Python/Python311/:/mnt/c/laragon/bin:/mnt/c/laragon/bin/apache/httpd-2.4.47-win64-VS16/bin:/mnt/c/laragon/bin/composer:/mnt/c/laragon/bin/git/bin:/mnt/c/laragon/bin/git/cmd:/mnt/c/laragon/bin/git/mingw64/bin:/mnt/c/laragon/bin/git/usr/bin:/mnt/c/laragon/bin/laragon/utils:/mnt/c/laragon/bin/mysql/mysql-5.7.33-winx64/bin:/mnt/c/laragon/bin/nginx/nginx-1.19.10:/mnt/c/laragon/bin/ngrok:/mnt/c/laragon/bin/nodejs/node-v14:/mnt/c/laragon/bin/notepad++:/mnt/c/laragon/bin/redis/redis-x64-3.2.100:/mnt/c/laragon/bin/telnet:/mnt/c/laragon/usr/bin:/mnt/c/Users/amir_/AppData/Local/Yarn/config/global/node_modules/.bin:/mnt/c/Users/amir_/AppData/Roaming/Composer/vendor/bin:/mnt/c/flutter/bin:/mnt/c/Users/amir_/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/amir_/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/Java/jdk-19/bin:/mnt/c/Users/amir_/AppData/Roaming/npm:/snap/bin:/opt/spark/bin:/opt/spark/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.6.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)
+
+npm manifest: 
+  {
+    "name": "first-graphql-server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+      "compile": "tsc",
+      "start": "node --import ./scripts/register.js --watch src/index.ts",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "generate": "graphql-codegen",
+      "prisma": "prisma"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@apollo/datasource-rest": "^6.2.2",
+      "@apollo/server": "^4.10.0",
+      "@prisma/client": "^5.12.1",
+      "bcrypt": "^5.1.1",
+      "graphql": "^16.8.1",
+      "graphql-codegen": "^0.4.0",
+      "graphql-tag": "^2.12.6",
+      "jsonwebtoken": "^9.0.2"
+    },
+    "devDependencies": {
+      "@graphql-codegen/cli": "^5.0.2",
+      "@graphql-codegen/typescript": "^4.0.6",
+      "@graphql-codegen/typescript-resolvers": "^4.0.6",
+      "@types/bcrypt": "^5.0.2",
+      "@types/jsonwebtoken": "^9.0.6",
+      "@types/node": "^20.11.19",
+      "nodemon": "^3.0.3",
+      "prisma": "^5.12.1",
+      "ts-node": "^10.9.2",
+      "typescript": "^5.3.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
